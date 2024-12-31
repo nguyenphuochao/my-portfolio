@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+nav .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* banner */
+#banner .info {
+    margin-top: 100px;
+}
+
+#banner .info h6 {
+    margin-bottom: 15px;
+    color: #F2BC36;
+    font-weight: bold;
+}
+
+#banner .info h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+#banner .info h3 {
+    margin-top: 25px;
+    color: white;
+}
+
+#banner .info .contact-me {
+    margin-top: 45px;
+}
+
+#banner .info .contact-me span {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+#banner .info .contact-me span.active {
+    color: black;
+    background-color: #F2BC36;
+}
+
+#banner .info .contact-me span:last-child {
+    margin-left: 15px;
+}
+
+/* about-me */
+#about-me {
+    margin-top: 60px;
+}
+
+#about-me h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+#about-me p {
+    margin-top: 25px;
+    color: rgb(163, 157, 157);
+}
+
+#about-me table tr {
+    line-height: 35px;
+}
+
+#about-me table tr th:first-child {
+    width: 40%;
+    color: white;
+}
+
+#about-me table tr td:last-child {
+    color: rgb(163, 157, 157);
+}
+
+#about-me .cv {
+    margin-top: 20px;
+}
+
+#about-me .cv div {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#about-me .cv .qty {
+    color: #F2BC36;
+}
+
+#about-me .cv a {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F2BC36;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Resume */
+#resume {
+    margin-top: 60px;
+}
+
+#resume h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#resume > p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: rgb(170, 165, 157);
+}
+
+#resume .info {
+    margin-top: 50px;
+}
+
+#resume .info .box {
+    padding: 35px 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #1A1A1A;
+    height: 350px;
+}
+
+#resume .info .year {
+    color:  #F2BC36;
+}
+
+#resume .info .position {
+    color: white;
+}
+
+#resume .info .word-place {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(135, 137, 139);
+}
+
+#resume .info p {
+    color: rgb(135, 137, 139);
+}
+
+#resume .cv {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#resume .cv a {
+    color: white;
+    border: 1px solid white;
+    padding: 22px 45px;
+    border-radius: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F2BC36;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Contact Me */
+#contact-me {
+    margin-top: 50px;
+}
+
+#contact-me h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-me p {
+    color: rgb(135, 137, 139);
+    text-align: center;
+}
+
+#contact-me .icon {
+    font-size: 40px;
+    color: #F2BC36;
+    text-align: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #1A1A1A;
+    margin: auto;
+    padding-top: 18px;
+}
+
+#contact-me .title {
+    margin-top: 20px;
+   color: white;
+   text-transform: uppercase;
+   font-weight: 500;
+   text-align: center;
+}
+
+#contact-me .desc {
+    color: rgb(160, 158, 156);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form-contact .box-avatar {
+    background-color: #1E1E1E;
+}
+
+.form-contact .box-form {
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+.form-contact .box-form input {
+    height: 50px;
+}
+
+.form-contact .box-form button {
+    color: white;
+    border: 1px solid white;
+    padding: 15px 35px;
+    border-radius: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F2BC36;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+footer p {
+    color: rgb(170, 165, 157);
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    color: rgb(170, 165, 157);
+}
+
+footer ul li a {
+    color: rgb(170, 165, 157);
+}
+
+.footer-bottom {
+    color:  rgb(170, 165, 157);
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
