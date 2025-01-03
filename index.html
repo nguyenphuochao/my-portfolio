@@ -15,370 +15,451 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="vendor/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick-theme.css" />
+    <!-- Animate On Scroll Library -->
+     <link rel="stylesheet" href="vendor/aos.css">
     <!-- CSS custom -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#banner">CLARK</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#banner">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-me">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#my-skill">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#our-projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-me">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#banner">CLARK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#banner">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- banner -->
-    <section id="banner">
-        <div class="my-banner">
-            <div class="item">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="info">
-                            <h6>HELLO !</h6>
-                            <h2>I'm Hao</h2>
-                            <h3>A Web Developer</h3>
-                            <div class="contact-me">
-                                <span class="active">HIRE ME</span>
-                                <span>MY WORKS</span>
+    <main>
+        <div class="container">
+            <!-- banner -->
+            <section id="banner" class="hidden">
+                <div class="my-banner">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="info">
+                                    <h6>HELLO !</h6>
+                                    <h2>I'm Hao</h2>
+                                    <h3>A Web Developer</h3>
+                                    <div class="contact-me">
+                                        <span class="active">HIRE ME</span>
+                                        <span>MY WORKS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 d-none d-md-block">
+                                <div class="box text-center">
+                                    <img class="d-inline-block" src="images/avatar.png" width="530px" alt="avatar">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="images/avatar.png" width="100%" alt="avatar">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="info">
-                            <h6>HELLO !</h6>
-                            <h2>I'm Hao</h2>
-                            <h3>A Web Developer</h3>
-                            <div class="contact-me">
-                                <span class="active">HIRE ME</span>
-                                <span>MY WORKS</span>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="info">
+                                    <h6>HELLO !</h6>
+                                    <h2>I'm Hao</h2>
+                                    <h3>A Web Developer</h3>
+                                    <div class="contact-me">
+                                        <span class="active">HIRE ME</span>
+                                        <span>MY WORKS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 d-none d-md-block">
+                                <img src="images/avatar.png" width="530px" alt="avatar">
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- About-me -->
+            <section id="about-me" class="hidden">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="box d-none d-md-block">
+                            <img src="images/avatar.png" width="100%" alt="avatar">
+                        </div>
+                    </div>
                     <div class="col-md-7">
-                        <img src="images/avatar.png" width="100%" alt="avatar">
+                        <div class="box pl-5">
+                            <h2>About Me</h2>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.
+                            </p>
+                            <div class="info">
+                                <table>
+                                    <tr>
+                                        <th>Name :</th>
+                                        <td>Nguyen Phuoc Hao</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Date of birth :</th>
+                                        <td>30/04/1999</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address :</th>
+                                        <td>180 Cao Lo, Ward 4, District 8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email :</th>
+                                        <td>nguyenphuochao123@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone :</th>
+                                        <td>058.4228.904</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="cv">
+                                <div><span class="qty">10+</span> Project complete</div>
+                                <a href="#">Download CV</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- About-me -->
-    <section id="about-me">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/avatar.png" width="100%" alt="avatar">
-            </div>
-            <div class="col-md-6">
-                <h2>About Me</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="info">
-                    <table>
-                        <tr>
-                            <th>Name :</th>
-                            <td>Nguyen Phuoc Hao</td>
-                        </tr>
-                        <tr>
-                            <th>Date of birth :</th>
-                            <td>30/04/1999</td>
-                        </tr>
-                        <tr>
-                            <th>Address :</th>
-                            <td>180 Cao Lo, Ward 4, District 8</td>
-                        </tr>
-                        <tr>
-                            <th>Email :</th>
-                            <td>nguyenphuochao123@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th>Phone :</th>
-                            <td>058.4228.904</td>
-                        </tr>
-                    </table>
+            <!-- Resume -->
+            <section id="resume" class="hidden">
+                <h2>Resume</h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                    paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <div class="row info">
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h4 class="year">2017-2022</h4>
+                            <h4 class="position mt-4">Information technology engineer</h4>
+                            <h4 class="word-place mt-4">Saigon University of Technology</h4>
+                            <p class="description mt-4">
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It
+                                is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h4 class="year">2017-2022</h4>
+                            <h4 class="position mt-4">Information technology engineer</h4>
+                            <h4 class="word-place mt-4">Saigon University of Technology</h4>
+                            <p class="description mt-4">
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It
+                                is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h4 class="year">2017-2022</h4>
+                            <h4 class="position mt-4">Information technology engineer</h4>
+                            <h4 class="word-place mt-4">Saigon University of Technology</h4>
+                            <p class="description mt-4">
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It
+                                is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box">
+                            <h4 class="year">2017-2022</h4>
+                            <h4 class="position mt-4">Information technology engineer</h4>
+                            <h4 class="word-place mt-4">Saigon University of Technology</h4>
+                            <p class="description mt-4">
+                                A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia. It
+                                is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="cv">
-                    <div><span class="qty">10+</span> Project complete</div>
                     <a href="#">Download CV</a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Resume -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-            paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        <div class="row info">
-            <div class="col-md-6">
-                <div class="box">
-                    <h4 class="year">2017-2022</h4>
-                    <h4 class="position mt-4">Information technology engineer</h4>
-                    <h4 class="word-place mt-4">Saigon University of Technology</h4>
-                    <p class="description mt-4">
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    </p>
+            <!-- My skill -->
+            <section id="my-skill" class="hidden">
+                <h2>My Skill</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <div class="button-group">
+                    <button class="active" data="all">All</button>
+                    <button data="front-end">Front-end</button>
+                    <button data="back-end">Back-end</button>
+                    <button data="database">Database</button>
                 </div>
-            </div>
+                <div class="row">
 
-            <div class="col-md-6">
-                <div class="box">
-                    <h4 class="year">2017-2022</h4>
-                    <h4 class="position mt-4">Information technology engineer</h4>
-                    <h4 class="word-place mt-4">Saigon University of Technology</h4>
-                    <p class="description mt-4">
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    </p>
-                </div>
-            </div>
+                    <div data="front-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/html.jpg" alt="">
+                        </div>
+                    </div>
 
-            <div class="col-md-6">
-                <div class="box">
-                    <h4 class="year">2017-2022</h4>
-                    <h4 class="position mt-4">Information technology engineer</h4>
-                    <h4 class="word-place mt-4">Saigon University of Technology</h4>
-                    <p class="description mt-4">
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    </p>
-                </div>
-            </div>
+                    <div data="front-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/css.jpg" alt="">
+                        </div>
+                    </div>
 
-            <div class="col-md-6">
-                <div class="box">
-                    <h4 class="year">2017-2022</h4>
-                    <h4 class="position mt-4">Information technology engineer</h4>
-                    <h4 class="word-place mt-4">Saigon University of Technology</h4>
-                    <p class="description mt-4">
-                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="cv">
-            <a href="#">Download CV</a>
-        </div>
-    </section>
+                    <div data="front-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/javascript.png" alt="">
+                        </div>
+                    </div>
 
-    <!-- My skill -->
-    <section id="my-skill">
-        <h2>My Skill</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        <div class="button-group">
-            <button class="active">All</button>
-            <button>Front-end</button>
-            <button>Back-end</button>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box">
-                    <img src="images/php.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <img src="images/laravel.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <img src="images/php.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <img src="images/php.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div data="front-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/jquery.jpg" alt="">
+                        </div>
+                    </div>
 
-    <!-- Our Projects -->
-    <section id="our-projects">
-        <h2 class="our-rojects">Our Projects</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="box">
-                    <img src="images/taxi_app.PNG" alt="" style="width: 100%;height: 250px;">
-                    <div class="overlay">
-                        <h4>Project 1</h4>
+                    <div data="front-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/react.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- back-end -->
+
+                    <div data="back-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/php.png" alt="">
+                        </div>
+                    </div>
+
+                    <div data="back-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/laravel.png" alt="">
+                        </div>
+                    </div>
+
+                    <div data="back-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/wordpress.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div data="back-end" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/yii.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- database -->
+                    <div data="database" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/sql.png" alt="">
+                        </div>
+                    </div>
+
+                    <div data="database" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/mysql.png" alt="">
+                        </div>
+                    </div>
+
+                    <div data="database" class="col-md-3 col-6">
+                        <div class="box">
+                            <img src="images/nosql.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Our Projects -->
+            <section id="our-projects" class="hidden">
+                <h2 class="our-rojects">Our Projects</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <img src="images/taxi_app.PNG" alt="" style="width: 100%;height: 250px;">
+                            <div class="overlay">
+                                <h4>Project 1</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="box">
+                            <img src="images/misepuri.PNG" alt="" style="width: 100%;height: 250px;">
+                            <div class="overlay">
+                                <h4>Project 1</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="box">
+                            <img src="images/taxi_app.PNG" alt="" style="width: 100%;height: 250px;">
+                            <div class="overlay">
+                                <h4>Project 1</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box">
+                            <img src="images/misepuri.PNG" alt="" style="width: 100%;height: 250px;">
+                            <div class="overlay">
+                                <h4>Project 1</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="box">
-                    <img src="images/misepuri.PNG" alt="" style="width: 100%;height: 250px;">
-                    <div class="overlay">
-                        <h4>Project 1</h4>
+            </section>
+
+            <!-- Contact Me -->
+            <section id="contact-me" class="hidden">
+                <h2>Contact Me</h2>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and <br>
+                    Consonantia
+                </p>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-address-book"></i></div>
+                            <div class="title">Address</div>
+                            <div class="desc">180 Cao Lo, Ward 4, District 8</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="title">Contact Number</div>
+                            <div class="desc">058.4228.904</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="title">Email Address</div>
+                            <div class="desc">nguyenphuochao123@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                            <div class="title">Website</div>
+                            <div class="desc">nguyenphuochao.fun</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-8">
-                <div class="box">
-                    <img src="images/taxi_app.PNG" alt="" style="width: 100%;height: 250px;">
-                    <div class="overlay">
-                        <h4>Project 1</h4>
+                <div class="form-contact mt-5">
+                    <div class="row">
+                        <div class="col-md-6 pr-md-0 order-2 order-md-1">
+                            <div class="box-avatar">
+                                <img src="images/avatar.png" height="100%" width="100%" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-0 order-1 order-md-2">
+                            <form id="form-contact">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Your Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Message" cols="30" rows="10"
+                                        class="form-control"></textarea>
+                                </div>
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box">
-                    <img src="images/misepuri.PNG" alt="" style="width: 100%;height: 250px;">
-                    <div class="overlay">
-                        <h4>Project 1</h4>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
-
-    <!-- Contact Me -->
-    <section id="contact-me">
-        <h2>Contact Me</h2>
-        <p>
-            Far far away, behind the word mountains, far from the countries Vokalia and <br>
-            Consonantia
-        </p>
-        <div class="row mt-5">
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-address-book"></i></div>
-                    <div class="title">Address</div>
-                    <div class="desc">180 Cao Lo, Ward 4, District 8</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                    <div class="title">Contact Number</div>
-                    <div class="desc">058.4228.904</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="title">Email Address</div>
-                    <div class="desc">nguyenphuochao123@gmail.com</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="icon"><i class="fa-solid fa-globe"></i></div>
-                    <div class="title">Website</div>
-                    <div class="desc">nguyenphuochao.fun</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-contact mt-5">
-            <div class="row">
-                <div class="col-md-6 box-avatar">
-                    <img src="images/avatar.png" alt="avatar" width="100%">
-                </div>
-                <div class="col-md-6 box-form">
-                    <form id="form-contact">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" placeholder="Message" cols="30" rows="10"
-                                class="form-control"></textarea>
-                        </div>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <div class="row">
-            <div class="col-md-3">
-                <h3>About</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                    the blind texts.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum, aut illo maxime in
+                        fugiat
+                        accusantium ratione nostrum quam suscipit?</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>&nbsp; Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Have a Questions?</h3>
+                    <ul>
+                        <li>SPLUS SOFTWARE JSC 2 Đ. Hồng Hà, Phường 2, Tân Bình, Hồ Chí Minh</li>
+                        <li>+84 422 8904</li>
+                        <li>nguyenphuochao123@gmail.com</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                </ul>
+            <div class="list-social">
+                <a class="hidden" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="hidden" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="hidden" href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
             </div>
-            <div class="col-md-3">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                </ul>
+            <div class="footer-bottom">
+                Copyright ©2025
             </div>
-            <div class="col-md-3">
-                <h3>Have a Questions?</h3>
-                <ul>
-                    <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
-                    <li>+2 392 3929 210</li>
-                    <li>info@yourdomain.com</li>
-                </ul>
-            </div>
-        </div>
-        <div class="list-social">
-            <a href="#">aa</a>
-            <a href="#">bb</a>
-            <a href="#">cc</a>
-        </div>
-        <div class="footer-bottom">
-            Copyright ©2024
         </div>
     </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -391,8 +472,17 @@
         crossorigin="anonymous"></script>
     <!-- Slick Js -->
     <script type="text/javascript" src="vendor/slick.min.js"></script>
+    <!-- jquery validation -->
+    <script src="vendor/jquery.validate.min.js"></script>
+    <!-- aos.js -->
+     <script src="vendor/aos.js"></script>
     <!-- Script custom -->
     <script src="js/script.js"></script>
+
+    <!-- aos.js  -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

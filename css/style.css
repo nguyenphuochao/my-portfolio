@@ -10,7 +10,26 @@
 }
 
 body {
-    background-color:black;
+    background-color: black;
+}
+
+#form-contact .error {
+    color: red;
+}
+
+/* navigation */
+
+header {
+    top: -999px;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+    transition: ease 0.5s;
 }
 
 nav .navbar-brand {
@@ -20,7 +39,7 @@ nav .navbar-brand {
 }
 
 nav .navbar-toggler {
-  background-color: grey;
+    background-color: grey;
 }
 
 nav ul li a {
@@ -321,18 +340,19 @@ nav ul li a.active {
 
 .form-contact .box-avatar {
     background-color: #1E1E1E;
+    height: 100%;
 }
 
-.form-contact .box-form {
+.form-contact form {
     background-color: aliceblue;
     padding: 30px;
 }
 
-.form-contact .box-form input {
+.form-contact form input {
     height: 50px;
 }
 
-.form-contact .box-form button {
+.form-contact form button {
     color: white;
     border: 1px solid white;
     padding: 15px 35px;
@@ -373,6 +393,22 @@ footer ul li a {
     color: rgb(170, 165, 157);
 }
 
+footer .list-social {
+    margin-top: 30px;
+}
+
+footer .list-social i {
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #1A1A1A;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
 .footer-bottom {
     color: rgb(170, 165, 157);
     text-align: center;
@@ -380,13 +416,31 @@ footer ul li a {
     margin-bottom: 70px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    #banner {
-        position: relative;
-    }
+/* Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: ease 1.3s;
+}
 
-    #banner .item:first-child {
-       margin: auto;
+.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+    #banner img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner .info {
+        height: 550px;
+        text-align: center;
+        background-image: url(../images/avatar.png);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
