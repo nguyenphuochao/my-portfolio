@@ -20,7 +20,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 200000
+        autoplaySpeed: 1000
     });
 
     // My-skill filter

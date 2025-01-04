@@ -40,9 +40,10 @@ nav .navbar-toggler {
 
 nav ul li a {
     color: white !important;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
-    margin-left: 20px;
+    margin-right: 25px;
+    font-size: 18px;
 }
 
 nav ul li a.active span {
@@ -184,7 +185,6 @@ nav ul li a.active span {
     border-radius: 10px;
     margin-bottom: 25px;
     background-color: #1A1A1A;
-    height: 350px;
 }
 
 #resume .info .year {
@@ -360,7 +360,7 @@ nav ul li a.active span {
     font-size: 12px;
 }
 
-#form-contact form .error {
+#form-contact .error {
     color: red;
 }
 
