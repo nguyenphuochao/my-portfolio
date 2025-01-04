@@ -6,11 +6,12 @@
 
 :root {
     --warning-color: #F2BC36;
+    --dark-color: black;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
+    background-color: var(--dark-color);
 }
 
 /* navigation */
@@ -24,7 +25,7 @@ header.sticky {
     top: 0;
     width: 100%;
     z-index: 999;
-    background-color: black;
+    background-color: var(--dark-color);
     transition: ease 0.5s;
 }
 
@@ -89,7 +90,7 @@ nav ul li a.active span {
 }
 
 #banner .info .contact-me span.active {
-    color: black;
+    color: var(--dark-color);
     background-color: #F2BC36;
 }
 
@@ -150,7 +151,7 @@ nav ul li a.active span {
     display: inline-block;
     text-decoration: none;
     background-color: #F2BC36;
-    color: black;
+    color: var(--dark-color);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 12px;
@@ -259,8 +260,8 @@ nav ul li a.active span {
 }
 
 #my-skill .button-group button.active {
-    background-color: #F2BC36;
-    color: black;
+    background-color: var(--warning-color);
+    color: var(--dark-color);
 }
 
 #my-skill .box img {
@@ -444,4 +445,3 @@ footer .list-social i {
         height: 80px;
     }
 }
-

@@ -3,6 +3,11 @@ $(document).ready(function () {
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 200);
+
+        // active nav item first
+        if(window.scrollY == 0) {
+           $("nav ul li:first-child a").addClass("active");
+        }
     });
 
     // click active nav item
@@ -20,7 +25,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 2000
     });
 
     // My-skill filter

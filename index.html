@@ -16,12 +16,12 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick-theme.css" />
     <!-- Animate On Scroll Library -->
-     <link rel="stylesheet" href="vendor/aos.css">
+    <link rel="stylesheet" href="vendor/aos.css">
     <!-- CSS custom -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light pt-4 container">
@@ -36,19 +36,19 @@
                         <a class="nav-link active" href="#banner"><span>Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About</a>
+                        <a class="nav-link" href="#about-me"><span>About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" href="#resume"><span>Resume</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#my-skill">Skills</a>
+                        <a class="nav-link" href="#my-skill"><span>Skills</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-projects">Projects</a>
+                        <a class="nav-link" href="#our-projects"><span>Projects</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact-me">Contact</a>
+                        <a class="nav-link" href="#contact-me"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@
                                     <h2>I'm Hao</h2>
                                     <h3>A Web Developer</h3>
                                     <div class="contact-me">
-                                        <span class="active">HIRE ME</span>
+                                        <span class="active">CONTACT ME</span>
                                         <span>MY WORKS</span>
                                     </div>
                                 </div>
@@ -88,13 +88,13 @@
                                     <h2>I'm Hao</h2>
                                     <h3>A Web Developer</h3>
                                     <div class="contact-me">
-                                        <span class="active">HIRE ME</span>
+                                        <span class="active">CONTACT ME</span>
                                         <span>MY WORKS</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-7 d-none d-md-block">
-                                <img src="images/avatar.png" width="530px" alt="avatar">
+                                <img src="images/avatar1.png" width="530px" alt="avatar">
                             </div>
                         </div>
                     </div>
@@ -105,8 +105,8 @@
             <section id="about-me" class="hidden">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="box d-none d-md-block">
-                            <img src="images/avatar.png" width="100%" alt="avatar">
+                        <div class="box d-none d-md-block h-100">
+                            <img src="images/avatar1.png" width="100%" height="100%" alt="avatar">
                         </div>
                     </div>
                     <div class="col-md-7 col-12">
@@ -114,7 +114,8 @@
                             <h2>About Me</h2>
                             <p>
                                 I am a programmer with 2 years of experience developing web applications. <br>
-                                I am passionate about building simple but effective software solutions that help businesses optimize their workflow.
+                                I am passionate about building simple but effective software solutions that help
+                                businesses optimize their workflow.
                             </p>
                             <div class="info">
                                 <table>
@@ -153,8 +154,8 @@
             <section id="resume" class="hidden">
                 <h2>Resume</h2>
                 <p>
-                    I am a PHP programmer with over 2 years of experience, specializing in web development and system optimization. <br>
-                    I have contributed to implementing large-scale projects, bringing practical value to businesses.
+                    With the knowledge, skills and experience I have accumulated, I have contributed to implementing
+                    projects from small to large scale, bringing practical value to businesses.
                 </p>
                 <div class="row info">
                     <div class="col-md-6">
@@ -189,9 +190,11 @@
                             <h4 class="position mt-4">Website Programmer</h4>
                             <h4 class="word-place mt-4">Brightstar Company</h4>
                             <p class="description mt-4">
-                                - Develop and maintain web applications based on PHP, Laravel Framework, CMS Wordpress. <br>
+                                - Develop and maintain web applications based on PHP, Laravel Framework, CMS Wordpress.
+                                <br>
                                 - Apply techniques such as: bootstrap, MVC model, ajax to projects. <br>
-                                - Build websites from client side to server side: e-commerce website, news website, company introduction website. <br>
+                                - Build websites from client side to server side: e-commerce website, news website,
+                                company introduction website. <br>
                             </p>
                         </div>
                     </div>
@@ -218,7 +221,8 @@
             <!-- My skill -->
             <section id="my-skill" class="hidden">
                 <h2>My Skill</h2>
-                <p>I have a strong background in web programming, focusing on application development and system optimization.</p>
+                <p>I have a strong background in web programming, focusing on application development and system
+                    optimization.</p>
                 <div class="button-group">
                     <button class="active" data="all">All</button>
                     <button data="front-end">Front-end</button>
@@ -307,7 +311,7 @@
                             <img src="images/nosql.jpg" alt="">
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -413,7 +417,7 @@
                     <div class="row">
                         <div class="col-md-6 pr-md-0 order-2 order-md-1">
                             <div class="box-avatar">
-                                <img src="images/avatar.png" height="100%" width="100%" alt="">
+                                <img src="images/avatar1.png" height="100%" width="100%" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 pl-md-0 order-1 order-md-2">
@@ -504,7 +508,7 @@
     <!-- jquery validation -->
     <script src="vendor/jquery.validate.min.js"></script>
     <!-- aos.js -->
-     <script src="vendor/aos.js"></script>
+    <script src="vendor/aos.js"></script>
     <!-- Script custom -->
     <script src="js/script.js"></script>
 
