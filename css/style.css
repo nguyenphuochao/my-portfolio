@@ -137,8 +137,15 @@ nav ul li a.active span {
     color: white;
 }
 
-#about-me .cv .qty {
+#about-me .cv .qty-project {
     color: #F2BC36;
+    font-size: 25px ;
+}
+
+#about-me .cv .qty-project + span {
+    color: red;
+    color: #F2BC36;
+    font-size: 25px ;
 }
 
 #about-me .cv a {
@@ -287,6 +294,21 @@ nav ul li a.active span {
     text-align: center;
 }
 
+#our-projects .view-website {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #F2BC36;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
 /* Contact Me */
 #contact-me {
     margin-top: 50px;
@@ -308,7 +330,6 @@ nav ul li a.active span {
 #contact-me .icon {
     font-size: 40px;
     color: #F2BC36;
-    text-align: center;
     border-radius: 50%;
     height: 100px;
     width: 100px;
@@ -322,13 +343,11 @@ nav ul li a.active span {
     color: white;
     text-transform: uppercase;
     font-weight: 500;
-    text-align: center;
 }
 
 #contact-me .desc {
     color: rgb(160, 158, 156);
     margin-top: 15px;
-    text-align: center;
 }
 
 .form-contact .box-avatar {

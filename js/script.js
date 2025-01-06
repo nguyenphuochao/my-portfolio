@@ -5,8 +5,8 @@ $(document).ready(function () {
         header.classList.toggle("sticky", window.scrollY > 200);
 
         // active nav item first
-        if(window.scrollY == 0) {
-           $("nav ul li:first-child a").addClass("active");
+        if (window.scrollY == 0) {
+            $("nav ul li:first-child a").addClass("active");
         }
     });
 
@@ -26,6 +26,12 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2000
+    });
+
+    // counter number
+    $('.counter').countUp({
+        'time': 3000,
+        'delay': 10
     });
 
     // My-skill filter
@@ -84,6 +90,5 @@ $(document).ready(function () {
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
-
 
 });
