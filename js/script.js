@@ -67,13 +67,13 @@ $(document).ready(function () {
             message: "required"
         },
         messages: {
-            name: "Vui lòng nhập tên",
+            name: "Please enter this field",
             email: {
-                required: "Vui lòng nhập email",
-                email: "Email phải đúng định dạng name@domain.com"
+                required: "Please enter this field",
+                email: "Email much format name@domain.com"
             },
-            subject: "Vui lòng nhập tiêu đề",
-            message: "Vui lòng nhập nội dung"
+            subject: "Please enter this field",
+            message: "Please enter this field"
         }
     });
 

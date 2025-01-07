@@ -139,13 +139,13 @@ nav ul li a.active span {
 
 #about-me .cv .qty-project {
     color: #F2BC36;
-    font-size: 25px ;
+    font-size: 25px;
 }
 
-#about-me .cv .qty-project + span {
+#about-me .cv .qty-project+span {
     color: red;
     color: #F2BC36;
-    font-size: 25px ;
+    font-size: 25px;
 }
 
 #about-me .cv a {
@@ -444,22 +444,51 @@ footer .list-social i {
     transform: translateX(0px);
 }
 
+/* custom slick */
+.slick-dots {
+    margin-bottom: 40px;
+}
+
+.slick-dots li {
+    background-color: grey;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+}
+
+.slick-dots li.slick-active {
+    background-color: white;
+}
+
 /* Responsive */
-@media screen and (max-width: 996px) {
-    #banner img {
+@media screen and (max-width: 992px) {
+    #banner .my-banner .item {
+        position: relative;
+    }
+
+    #banner .my-banner .item .info {
+        padding-top: 60px;
+        text-align: center;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+    }
+
+    #banner .my-banner .item .avatar {
+        margin-top: 100px;
+    }
+
+    #banner .my-banner .item .avatar img {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 768px) {
-    #banner .info {
-        height: 550px;
-        text-align: center;
-        background-image: url(../images/avatar.png);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
     #my-skill .box img {
         height: 80px;
     }
