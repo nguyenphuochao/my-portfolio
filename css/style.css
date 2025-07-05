@@ -14,6 +14,58 @@ body {
     background-color: var(--dark-color);
 }
 
+body p {
+    color: var(--dark-color) !important;
+}
+
+/* custom theme dark -> light */
+body.light {
+    background-color: white;
+}
+
+body.light header.sticky {
+    background-color: white;
+}
+
+body.light nav .navbar-brand {
+    color: var(--dark-color) !important;
+}
+
+body.light nav ul li a {
+    color: var(--dark-color) !important;
+}
+
+body.light #banner .info h2 {
+    color: var(--dark-color);
+}
+
+body.light #banner .info h3 {
+    color: var(--dark-color);
+}
+
+body.light #about-me h2 {
+    color: var(--dark-color);
+}
+
+body.light footer {
+    color: var(--dark-color);
+}
+
+body.light #about-me table tr th:first-child {
+    color: var(--dark-color);
+}
+
+body.light h2 {
+    color: var(--dark-color) !important;
+}
+
+body.light #resume .info .box {
+    background-color: #E2E6EA;
+}
+
+
+
+
 /* navigation */
 
 header {
@@ -465,6 +517,25 @@ footer .list-social i {
 
 .slick-dots li.slick-active {
     background-color: white;
+}
+
+/* back to top */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: ease 0.5s;
+}
+
+.back-to-top i {
+    font-size: 30px;
+    background-color:#1A1A1A;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
 
 /* Responsive */

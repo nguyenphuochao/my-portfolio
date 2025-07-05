@@ -17,6 +17,9 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick-theme.css" />
     <!-- Animate On Scroll Library -->
     <link rel="stylesheet" href="vendor/aos.css">
+    <!-- toggle bootstrap 4 -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
     <!-- CSS custom -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -50,6 +53,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact-me"><span>Contact</span></a>
                     </li>
+                    <li>
+                        <input type="checkbox" id="toggle-theme" data-toggle="toggle" data-onstyle="dark"
+                           checked="false" data-offstyle="light" data-style="border">
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -75,7 +82,7 @@
                             </div>
                             <div class="col-lg-7 col-md-12">
                                 <div class="avatar text-center">
-                                    <img class="d-inline-block" src="images/avatar.png" width="530px" alt="avatar">
+                                    <img class="d-inline-block" src="images/avatar1.png" width="530px" alt="avatar">
                                 </div>
                             </div>
                         </div>
@@ -542,6 +549,11 @@
         </div>
     </footer>
 
+    <!-- Back to top -->
+    <div class="back-to-top" style="opacity: 0;">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -560,9 +572,10 @@
     <!-- Counter number -->
     <script src="vendor/jquery.countup.js"></script>
     <script src="vendor/waypoints.min.js"></script>
+    <!-- toggle bootstrap 4 JS -->
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <!-- Script custom -->
     <script src="js/script.js"></script>
-
     <!-- aos.js  -->
     <script>
         AOS.init();

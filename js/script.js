@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // load local storage
+    loadLocalstorage();
+
     // show nav scroll
     window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -91,4 +94,32 @@ $(document).ready(function () {
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
 
+    //scroll back to top
+    const handleScroll = () => {
+        if (window.scrollY > 300) {
+            $(".back-to-top").css("opacity", 1);
+        } else {
+            $(".back-to-top").css("opacity", 0);
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // toggle theme dark/light
+    $("#toggle-theme").change(function () {
+        var isCheckedToggleTheme = $(this).prop('checked');
+        localStorage.setItem('isCheckedToggleTheme', isCheckedToggleTheme);
+        $('body').toggleClass("light", !isCheckedToggleTheme);
+    })
+
 });
+
+function loadLocalstorage() {
+    var isCheckedToggleTheme = true
+    $("#toggle-theme").bootstrapToggle(isCheckedToggleTheme ? "on" : "off")
+    if (localStorage.getItem('isCheckedToggleTheme')) {
+        isCheckedToggleTheme = JSON.parse(localStorage.getItem('isCheckedToggleTheme')) ? true : false;
+        $("#toggle-theme").bootstrapToggle(isCheckedToggleTheme ? "on" : "off")
+        $('body').toggleClass("light", !isCheckedToggleTheme);
+    }
+}
