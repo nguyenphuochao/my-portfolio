@@ -4,67 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --warning-color: #F2BC36;
     --dark-color: black;
-    scroll-behavior: smooth;
+    --muted-color: #727475;
+    --primary-color: #122D52;
+    --primary-dark-color: #1F2937;
+    --secondary-color: #262a2e;
+    --secondary-light-color: #F9FAFB
 }
 
 body {
     background-color: var(--dark-color);
 }
-
-body p {
-    color: var(--dark-color) !important;
-}
-
-/* custom theme dark -> light */
-body.light {
-    background-color: white;
-}
-
-body.light header.sticky {
-    background-color: white;
-}
-
-body.light nav .navbar-brand {
-    color: var(--dark-color) !important;
-}
-
-body.light nav ul li a {
-    color: var(--dark-color) !important;
-}
-
-body.light #banner .info h2 {
-    color: var(--dark-color);
-}
-
-body.light #banner .info h3 {
-    color: var(--dark-color);
-}
-
-body.light #about-me h2 {
-    color: var(--dark-color);
-}
-
-body.light footer {
-    color: var(--dark-color);
-}
-
-body.light #about-me table tr th:first-child {
-    color: var(--dark-color);
-}
-
-body.light h2 {
-    color: var(--dark-color) !important;
-}
-
-body.light #resume .info .box {
-    background-color: #E2E6EA;
-}
-
-
-
 
 /* navigation */
 
@@ -469,6 +425,7 @@ footer ul li a {
 
 footer .list-social {
     margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 footer .list-social i {
@@ -486,8 +443,7 @@ footer .list-social i {
 .footer-bottom {
     color: rgb(170, 165, 157);
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding: 25px 0;
 }
 
 /* Animation */
@@ -529,13 +485,147 @@ footer .list-social i {
 
 .back-to-top i {
     font-size: 30px;
-    background-color:#1A1A1A;
+    background-color: #1A1A1A;
     color: white;
     padding: 10px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     text-align: center;
+}
+
+/* custom theme dark -> light */
+
+/* common */
+body.light {
+    background-color: white;
+}
+
+body.light h2 {
+    color: var(--dark-color) !important;
+}
+
+/* end common */
+
+/* nav light */
+body.light header.sticky {
+    background-color: white;
+}
+
+body.light nav .navbar-brand {
+    color: var(--dark-color) !important;
+}
+
+body.light nav ul li a {
+    color: var(--dark-color) !important;
+}
+
+/* banner light */
+body.light #banner .info h2 {
+    color: var(--dark-color);
+}
+
+body.light #banner .info h3 {
+    color: var(--dark-color);
+}
+
+/* about-me light */
+body.light #about-me h2 {
+    color: var(--dark-color);
+}
+
+body.light #about-me p {
+    color: var(--secondary-color);
+}
+
+body.light #about-me table tr th:first-child {
+    color: var(--secondary-color);
+}
+
+body.light #about-me table tr td:last-child {
+    color: var(--secondary-color);
+}
+
+/* Resum light */
+body.light #resume>p {
+    color: var(--secondary-color);
+}
+
+body.light #resume .info .box {
+    background-color: var(--secondary-light-color);
+}
+
+body.light #resume .info .position {
+    color: var(--secondary-color);
+}
+
+body.light #resume .info .word-place {
+    color: var(--secondary-color);
+}
+
+body.light #resume .info p {
+    color: var(--secondary-color);
+}
+
+/* My-skill light */
+body.light #my-skill p {
+    color: var(--secondary-color);
+}
+
+body.light #my-skill .button-group button {
+    color: white;
+    background-color: var(--muted-color);
+}
+
+body.light #my-skill .button-group button.active {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+/* our-projects light */
+body.light #our-projects p {
+    color: var(--secondary-color);
+}
+
+body.light #our-projects h6 {
+    color: var(--dark-color) !important;
+}
+
+body.light #contact-me p {
+    color: var(--secondary-color);
+}
+
+body.light #contact-me .title {
+    color: var(--dark-color);
+}
+
+body.light #contact-me .desc {
+    color: var(--secondary-color);
+}
+
+body.light #contact-me .icon {
+    background-color: var(--muted-color);
+}
+
+/* footer light */
+body.light footer h3 {
+    color: var(--dark-color);
+}
+
+body.light footer p {
+    color: var(--secondary-color);
+}
+
+body.light footer ul li {
+    color: var(--secondary-color);
+}
+
+body.light footer ul li a {
+    color: var(--secondary-color);
+}
+
+body.light .footer-bottom {
+    background-color: var(--primary-dark-color);
 }
 
 /* Responsive */
