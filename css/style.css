@@ -529,6 +529,21 @@ body.light #banner .info h3 {
     color: var(--dark-color);
 }
 
+body.light #banner .info .contact-me span a {
+    color: var(--secondary-color);
+    background-color: var(--secondary-light-color);
+}
+
+body.light #banner .info .contact-me span.active a {
+    color: var(--dark-color);
+    background-color: var(--warning-color);
+}
+
+body.light #banner .info .contact-me span a:hover {
+    color: var(--dark-color);
+    background-color: var(--warning-color);
+}
+
 /* about-me light */
 body.light #about-me h2 {
     color: var(--dark-color);

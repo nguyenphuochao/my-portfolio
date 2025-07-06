@@ -28,7 +28,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000 // later
     });
 
     // counter number
@@ -111,6 +111,22 @@ $(document).ready(function () {
         localStorage.setItem('isCheckedToggleTheme', isCheckedToggleTheme);
         $('body').toggleClass("light", !isCheckedToggleTheme);
     })
+
+    var typed1 = new Typed('.text-typing-effect-1', {
+        strings: ['', 'I am a web developer'],
+        typeSpeed : 100,
+        backSpeed: 50,
+        loop: true,
+        loopCount: 3
+    });
+
+    var typed2 = new Typed('.text-typing-effect-2', {
+        strings: ['', 'I am passionate and love to learn web programming'],
+        typeSpeed : 100,
+        backSpeed: 50,
+        loop: true,
+        loopCount: 3
+    });
 
 });
 
