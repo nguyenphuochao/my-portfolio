@@ -28,7 +28,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000 // later
+        autoplaySpeed: 2000
     });
 
     // counter number
@@ -121,7 +121,7 @@ $(document).ready(function () {
     });
 
     var typed2 = new Typed('.text-typing-effect-2', {
-        strings: ['', 'I am passionate and love to learn web programming'],
+        strings: ['', 'I am a web developer'],
         typeSpeed : 100,
         backSpeed: 50,
         loop: true,
