@@ -64,32 +64,32 @@ nav ul li a.active span {
 }
 
 /* banner */
-#banner .info {
+.my-banner .info {
     margin-top: 100px;
 }
 
-#banner .info h6 {
+.my-banner .info h6 {
     margin-bottom: 15px;
     color: var(--warning-color);
     font-weight: bold;
 }
 
-#banner .info h2 {
+.my-banner .info h2 {
     font-size: 70px;
     font-weight: bold;
     color: white;
 }
 
-#banner .info h3 {
+.my-banner .info h3 {
     margin-top: 25px;
     color: white;
 }
 
-#banner .info .contact-me {
+.my-banner .info .contact-me {
     margin-top: 45px;
 }
 
-#banner .info .contact-me span a {
+.my-banner .info .contact-me span a {
     color: white;
     border: 1px solid white;
     padding: 10px 20px;
@@ -98,71 +98,71 @@ nav ul li a.active span {
     text-decoration: none;
 }
 
-#banner .info .contact-me span a:hover {
+.my-banner .info .contact-me span a:hover {
     color: var(--dark-color);
     background-color: var(--warning-color);
 }
 
-#banner .info .contact-me span.active a {
+.my-banner .info .contact-me span.active a {
     color: var(--dark-color);
     background-color: var(--warning-color);
 }
 
-#banner .info .contact-me span:last-child {
+.my-banner .info .contact-me span:last-child {
     margin-left: 15px;
 }
 
 /* about-me */
-#about-me {
+.about-me {
     margin-top: 60px;
 }
 
-#about-me h2 {
+.about-me h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
 }
 
-#about-me p {
+.about-me p {
     margin-top: 25px;
     color: rgb(163, 157, 157);
 }
 
-#about-me table tr {
+.about-me table tr {
     line-height: 40px;
 }
 
-#about-me table tr th:first-child {
+.about-me table tr th:first-child {
     width: 40%;
     color: white;
 }
 
-#about-me table tr td:last-child {
+.about-me table tr td:last-child {
     color: rgb(163, 157, 157);
 }
 
-#about-me .cv {
+.about-me .cv {
     margin-top: 20px;
 }
 
-#about-me .cv div {
+.about-me .cv div {
     font-size: 20px;
     font-weight: bolder;
     color: white;
 }
 
-#about-me .cv .qty-project {
+.about-me .cv .qty-project {
     color: var(--warning-color);
     font-size: 25px;
 }
 
-#about-me .cv .qty-project+span {
+.about-me .cv .qty-project+span {
     color: red;
     color: var(--warning-color);
     font-size: 25px;
 }
 
-#about-me .cv a {
+.about-me .cv a {
     color: white;
     border: 1px solid white;
     padding: 10px 20px;
@@ -179,11 +179,11 @@ nav ul li a.active span {
 }
 
 /* Resume */
-#resume {
+.resume {
     margin-top: 60px;
 }
 
-#resume h2 {
+.resume h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -191,48 +191,53 @@ nav ul li a.active span {
     margin-bottom: 30px;
 }
 
-#resume>p {
+.resume>p {
     text-align: center;
     width: 80%;
     margin: auto;
     color: rgb(170, 165, 157);
 }
 
-#resume .info {
+.resume .info {
     margin-top: 50px;
 }
 
-#resume .info .box {
+.resume .info .box {
     padding: 35px 25px;
     border-radius: 10px;
     margin-bottom: 25px;
     background-color: #1A1A1A;
 }
 
-#resume .info .year {
+.resume .info .box:hover {
+    border: 1px solid #FFF;
+    transition: ease 0.5s;
+}
+
+.resume .info .year {
     color: var(--warning-color);
 }
 
-#resume .info .position {
+.resume .info .position {
     color: white;
 }
 
-#resume .info .word-place {
+.resume .info .word-place {
     font-size: 15px;
     text-transform: uppercase;
     color: rgb(135, 137, 139);
 }
 
-#resume .info p {
+.resume .info p {
     color: rgb(135, 137, 139);
 }
 
-#resume .cv {
+.resume .cv {
     margin-top: 40px;
     text-align: center;
 }
 
-#resume .cv a {
+.resume .cv a {
     color: white;
     border: 1px solid white;
     padding: 22px 45px;
@@ -249,11 +254,11 @@ nav ul li a.active span {
 }
 
 /* My Skill */
-#my-skill {
+.my-skill {
     margin-top: 80px;
 }
 
-#my-skill h2 {
+.my-skill h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -261,18 +266,18 @@ nav ul li a.active span {
     margin-bottom: 30px;
 }
 
-#my-skill p {
+.my-skill p {
     color: rgb(135, 137, 139);
     text-align: center;
 }
 
-#my-skill .button-group {
+.my-skill .button-group {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#my-skill .button-group button {
+.my-skill .button-group button {
     padding: 5px 10px;
     margin: 10px;
     border: 1px solid white;
@@ -280,22 +285,22 @@ nav ul li a.active span {
     color: white;
 }
 
-#my-skill .button-group button.active {
+.my-skill .button-group button.active {
     background-color: var(--warning-color);
     color: var(--dark-color);
 }
 
-#my-skill .box img {
+.my-skill .box img {
     width: 100%;
     height: 120px;
 }
 
 /* Our Projects */
-#our-projects {
+.our-projects {
     margin-top: 80px;
 }
 
-#our-projects h2 {
+.our-projects h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -303,12 +308,12 @@ nav ul li a.active span {
     margin-bottom: 30px;
 }
 
-#our-projects p {
+.our-projects p {
     color: rgb(135, 137, 139);
     text-align: center;
 }
 
-#our-projects .view-website {
+.our-projects .view-website {
     color: white;
     border: 1px solid white;
     padding: 5px;
@@ -324,11 +329,11 @@ nav ul li a.active span {
 }
 
 /* Contact Me */
-#contact-me {
+.contact-me {
     margin-top: 50px;
 }
 
-#contact-me h2 {
+.contact-me h2 {
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -336,12 +341,12 @@ nav ul li a.active span {
     margin-bottom: 30px;
 }
 
-#contact-me p {
+.contact-me p {
     color: rgb(135, 137, 139);
     text-align: center;
 }
 
-#contact-me .icon {
+.contact-me .icon {
     font-size: 40px;
     color: var(--warning-color);
     border-radius: 50%;
@@ -352,14 +357,14 @@ nav ul li a.active span {
     padding-top: 18px;
 }
 
-#contact-me .title {
+.contact-me .title {
     margin-top: 20px;
     color: white;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-#contact-me .desc {
+.contact-me .desc {
     color: rgb(160, 158, 156);
     margin-top: 15px;
 }
@@ -521,104 +526,109 @@ body.light nav ul li a {
 }
 
 /* banner light */
-body.light #banner .info h2 {
+body.light .my-banner .info h2 {
     color: var(--dark-color);
 }
 
-body.light #banner .info h3 {
+body.light .my-banner .info h3 {
     color: var(--dark-color);
 }
 
-body.light #banner .info .contact-me span a {
+body.light .my-banner .info .contact-me span a {
     color: var(--secondary-color);
     background-color: var(--secondary-light-color);
 }
 
-body.light #banner .info .contact-me span.active a {
+body.light .my-banner .info .contact-me span.active a {
     color: var(--dark-color);
     background-color: var(--warning-color);
 }
 
-body.light #banner .info .contact-me span a:hover {
+body.light .my-banner .info .contact-me span a:hover {
     color: var(--dark-color);
     background-color: var(--warning-color);
 }
 
 /* about-me light */
-body.light #about-me h2 {
+body.light .about-me h2 {
     color: var(--dark-color);
 }
 
-body.light #about-me p {
+body.light .about-me p {
     color: var(--secondary-color);
 }
 
-body.light #about-me table tr th:first-child {
+body.light .about-me table tr th:first-child {
     color: var(--secondary-color);
 }
 
-body.light #about-me table tr td:last-child {
+body.light .about-me table tr td:last-child {
     color: var(--secondary-color);
 }
 
 /* Resum light */
-body.light #resume>p {
+body.light .resume>p {
     color: var(--secondary-color);
 }
 
-body.light #resume .info .box {
+body.light .resume .info .box {
     background-color: var(--secondary-light-color);
 }
 
-body.light #resume .info .position {
+body.light .resume .info .box:hover {
+    border: 1px solid #465264;
+    transition: ease 0.5s;
+}
+
+body.light .resume .info .position {
     color: var(--secondary-color);
 }
 
-body.light #resume .info .word-place {
+body.light .resume .info .word-place {
     color: var(--secondary-color);
 }
 
-body.light #resume .info p {
+body.light .resume .info p {
     color: var(--secondary-color);
 }
 
 /* My-skill light */
-body.light #my-skill p {
+body.light .my-skill p {
     color: var(--secondary-color);
 }
 
-body.light #my-skill .button-group button {
+body.light .my-skill .button-group button {
     color: white;
     background-color: var(--muted-color);
 }
 
-body.light #my-skill .button-group button.active {
+body.light .my-skill .button-group button.active {
     background-color: var(--warning-color);
     color: var(--dark-color);
 }
 
 /* our-projects light */
-body.light #our-projects p {
+body.light .our-projects p {
     color: var(--secondary-color);
 }
 
-body.light #our-projects h6 {
+body.light .our-projects h6 {
     color: var(--dark-color) !important;
 }
 
-body.light #contact-me p {
+body.light .contact-me p {
     color: var(--secondary-color);
 }
 
-body.light #contact-me .title {
+body.light .contact-me .title {
     color: var(--dark-color);
 }
 
-body.light #contact-me .desc {
+body.light .contact-me .desc {
     color: var(--secondary-color);
 }
 
-body.light #contact-me .icon {
+body.light .contact-me .icon {
     background-color: var(--muted-color);
 }
 
@@ -645,11 +655,11 @@ body.light .footer-bottom {
 
 /* Responsive */
 @media screen and (max-width: 992px) {
-    #banner .my-banner .item {
+    .my-banner .item {
         position: relative;
     }
 
-    #banner .my-banner .item .info {
+    .my-banner .item .info {
         padding-top: 90px;
         text-align: center;
         width: 300px;
@@ -660,18 +670,18 @@ body.light .footer-bottom {
         z-index: 999;
     }
 
-    #banner .my-banner .item .avatar {
+    .my-banner .item .avatar {
         margin-top: 100px;
     }
 
-    #banner .my-banner .item .avatar img {
+    .my-banner .item .avatar img {
         width: 100%;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    #my-skill .box img {
+    .my-skill .box img {
         height: 80px;
     }
 }

@@ -117,15 +117,15 @@ $(document).ready(function () {
         typeSpeed : 100,
         backSpeed: 50,
         loop: true,
-        loopCount: 3
+        loopCount: 5
     });
 
     var typed2 = new Typed('.text-typing-effect-2', {
-        strings: ['', 'I am a web developer'],
+        strings: ['', 'I am a fullstack developer'],
         typeSpeed : 100,
         backSpeed: 50,
         loop: true,
-        loopCount: 3
+        loopCount: 5
     });
 
 });
