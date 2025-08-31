@@ -28,7 +28,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 4000
     });
 
     // counter number
@@ -109,7 +109,7 @@ $(document).ready(function () {
     $("#toggle-theme").change(function () {
         var isCheckedToggleTheme = $(this).prop('checked');
         localStorage.setItem('isCheckedToggleTheme', isCheckedToggleTheme);
-        $('body').toggleClass("light", !isCheckedToggleTheme);
+        $('body').toggleClass("light-theme", !isCheckedToggleTheme);
     })
 
     var typed1 = new Typed('.text-typing-effect-1', {
@@ -136,6 +136,6 @@ function loadLocalstorage() {
     if (localStorage.getItem('isCheckedToggleTheme')) {
         isCheckedToggleTheme = JSON.parse(localStorage.getItem('isCheckedToggleTheme')) ? true : false;
         $("#toggle-theme").bootstrapToggle(isCheckedToggleTheme ? "on" : "off")
-        $('body').toggleClass("light", !isCheckedToggleTheme);
+        $('body').toggleClass("light-theme", !isCheckedToggleTheme);
     }
 }

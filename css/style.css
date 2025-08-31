@@ -11,19 +11,29 @@ html {
 :root {
     --warning-color: #F2BC36;
     --dark-color: black;
-    --muted-color: #727475;
+    --muted-color: rgb(163, 157, 157);
     --primary-color: #122D52;
     --primary-dark-color: #1F2937;
     --secondary-color: #262a2e;
-    --secondary-light-color: #F9FAFB
+    --secondary-light-color: #F9FAFB;
+    --light-color: #FFFFFF;
+    --dark-light-color: #1A1A1A;
 }
 
 body {
     background-color: var(--dark-color);
 }
 
-/* navigation */
+body.light-theme {
+    background-color: white;
+    --light-color: black;
+    --dark-color: #FFFFFF;
+    --muted-color: black;
+    --secondary-light-color: black;
+    --dark-light-color: #F9FAFB;
+}
 
+/* navigation */
 header {
     top: -999px;
 }
@@ -38,7 +48,7 @@ header.sticky {
 }
 
 nav .navbar-brand {
-    color: white !important;
+    color: var(--light-color) !important;
     font-weight: bold;
     font-size: 25px;
 }
@@ -48,7 +58,7 @@ nav .navbar-toggler {
 }
 
 nav ul li a {
-    color: white !important;
+    color: var(--light-color) !important;
     text-transform: capitalize;
     font-weight: 500;
     margin-right: 25px;
@@ -77,12 +87,12 @@ nav ul li a.active span {
 .my-banner .info h2 {
     font-size: 70px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
 }
 
 .my-banner .info h3 {
     margin-top: 25px;
-    color: white;
+    color: var(--light-color);
 }
 
 .my-banner .info .contact-me {
@@ -90,8 +100,8 @@ nav ul li a.active span {
 }
 
 .my-banner .info .contact-me span a {
-    color: white;
-    border: 1px solid white;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: 500;
@@ -120,12 +130,12 @@ nav ul li a.active span {
 .about-me h2 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
 }
 
 .about-me p {
     margin-top: 25px;
-    color: rgb(163, 157, 157);
+    color: var(--muted-color);
 }
 
 .about-me table tr {
@@ -134,11 +144,11 @@ nav ul li a.active span {
 
 .about-me table tr th:first-child {
     width: 40%;
-    color: white;
+    color: var(--light-color);
 }
 
 .about-me table tr td:last-child {
-    color: rgb(163, 157, 157);
+    color: var(--muted-color);
 }
 
 .about-me .cv {
@@ -148,7 +158,7 @@ nav ul li a.active span {
 .about-me .cv div {
     font-size: 20px;
     font-weight: bolder;
-    color: white;
+    color: var(--light-color);
 }
 
 .about-me .cv .qty-project {
@@ -157,14 +167,13 @@ nav ul li a.active span {
 }
 
 .about-me .cv .qty-project+span {
-    color: red;
     color: var(--warning-color);
     font-size: 25px;
 }
 
 .about-me .cv a {
-    color: white;
-    border: 1px solid white;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: 500;
@@ -186,7 +195,7 @@ nav ul li a.active span {
 .resume h2 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -195,7 +204,7 @@ nav ul li a.active span {
     text-align: center;
     width: 80%;
     margin: auto;
-    color: rgb(170, 165, 157);
+    color: var(--muted-color);
 }
 
 .resume .info {
@@ -206,11 +215,11 @@ nav ul li a.active span {
     padding: 35px 25px;
     border-radius: 10px;
     margin-bottom: 25px;
-    background-color: #1A1A1A;
+    background-color: var(--dark-light-color);
 }
 
 .resume .info .box:hover {
-    border: 1px solid #FFF;
+    border: 1px solid var(--light-color);
     transition: ease 0.5s;
 }
 
@@ -219,17 +228,17 @@ nav ul li a.active span {
 }
 
 .resume .info .position {
-    color: white;
+    color: var(--light-color);
 }
 
 .resume .info .word-place {
     font-size: 15px;
     text-transform: uppercase;
-    color: rgb(135, 137, 139);
+    color: var(--muted-color);
 }
 
 .resume .info p {
-    color: rgb(135, 137, 139);
+    color: var(--muted-color);
 }
 
 .resume .cv {
@@ -238,8 +247,8 @@ nav ul li a.active span {
 }
 
 .resume .cv a {
-    color: white;
-    border: 1px solid white;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
     padding: 22px 45px;
     border-radius: 35px;
     font-weight: 500;
@@ -247,7 +256,7 @@ nav ul li a.active span {
     display: inline-block;
     text-decoration: none;
     background-color: var(--warning-color);
-    color: black;
+    color: var(--dark-color);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 12px;
@@ -261,13 +270,13 @@ nav ul li a.active span {
 .my-skill h2 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
     text-align: center;
     margin-bottom: 30px;
 }
 
 .my-skill p {
-    color: rgb(135, 137, 139);
+    color: var(--muted-color);
     text-align: center;
 }
 
@@ -278,11 +287,12 @@ nav ul li a.active span {
 }
 
 .my-skill .button-group button {
+    border-radius: 5px;
     padding: 5px 10px;
     margin: 10px;
-    border: 1px solid white;
-    background-color: #1A1A1A;
-    color: white;
+    border: 1px solid var(--light-color);
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .my-skill .button-group button.active {
@@ -303,29 +313,39 @@ nav ul li a.active span {
 .our-projects h2 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
     text-align: center;
     margin-bottom: 30px;
 }
 
 .our-projects p {
-    color: rgb(135, 137, 139);
+    color: var(--muted-color);
     text-align: center;
 }
 
+.our-projects .box h6 {
+    color: var(--light-color);
+}
+
 .our-projects .view-website {
-    color: white;
-    border: 1px solid white;
-    padding: 5px;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    padding: 2px 6px;
     border-radius: 35px;
     font-weight: 500;
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
     background-color: var(--warning-color);
-    color: black;
+    color: var(--dark-color);
     text-transform: uppercase;
     font-size: 10px;
+}
+
+.our-projects .badge-dark {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 2px 5px;
 }
 
 /* Contact Me */
@@ -336,13 +356,13 @@ nav ul li a.active span {
 .contact-me h2 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: var(--light-color);
     text-align: center;
     margin-bottom: 30px;
 }
 
 .contact-me p {
-    color: rgb(135, 137, 139);
+    color: var(--muted-color);
     text-align: center;
 }
 
@@ -359,23 +379,23 @@ nav ul li a.active span {
 
 .contact-me .title {
     margin-top: 20px;
-    color: white;
+    color: var(--light-color);
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .contact-me .desc {
-    color: rgb(160, 158, 156);
+    color: var(--muted-color);
     margin-top: 15px;
 }
 
 .form-contact .box-avatar {
-    background-color: #1E1E1E;
+    background-color: var(--dark-light-color);
     height: 100%;
 }
 
 .form-contact form {
-    background-color: aliceblue;
+    background-color: var(--light-color);
     padding: 30px;
 }
 
@@ -384,8 +404,8 @@ nav ul li a.active span {
 }
 
 .form-contact form button {
-    color: white;
-    border: 1px solid white;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
     padding: 15px 35px;
     border-radius: 35px;
     font-weight: 500;
@@ -393,7 +413,7 @@ nav ul li a.active span {
     display: inline-block;
     text-decoration: none;
     background-color: var(--warning-color);
-    color: black;
+    color: var(--dark-color);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 12px;
@@ -409,23 +429,23 @@ footer {
 }
 
 footer h3 {
-    color: white;
+    color: var(--light-color);
     margin-bottom: 30px;
     font-size: 24px;
 }
 
 footer p {
-    color: rgb(170, 165, 157);
+    color: var(--muted-color);
 }
 
 footer ul li {
     list-style: none;
     margin-bottom: 20px;
-    color: rgb(170, 165, 157);
+    color: var(--muted-color);
 }
 
 footer ul li a {
-    color: rgb(170, 165, 157);
+    color: var(--muted-color);
 }
 
 footer .list-social {
@@ -438,15 +458,15 @@ footer .list-social i {
     margin-right: 10px;
     border-radius: 50%;
     padding: 10px;
-    background-color: #1A1A1A;
+    background-color: var(--secondary-light-color);
     width: 50px;
     height: 50px;
     text-align: center;
-    color: white;
+    color: var(--dark-light-color);
 }
 
 .footer-bottom {
-    color: rgb(170, 165, 157);
+    color: var(--muted-color);
     text-align: center;
     padding: 25px 0;
 }
@@ -477,7 +497,7 @@ footer .list-social i {
 }
 
 .slick-dots li.slick-active {
-    background-color: white;
+    background-color: var(--light-color);
 }
 
 /* back to top */
@@ -490,167 +510,13 @@ footer .list-social i {
 
 .back-to-top i {
     font-size: 30px;
-    background-color: #1A1A1A;
-    color: white;
+    background-color: var(--secondary-light-color);
+    color: var(--dark-light-color);
     padding: 10px;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     text-align: center;
-}
-
-/* custom theme dark -> light */
-
-/* common */
-body.light {
-    background-color: white;
-}
-
-body.light h2 {
-    color: var(--dark-color) !important;
-}
-
-/* end common */
-
-/* nav light */
-body.light header.sticky {
-    background-color: white;
-}
-
-body.light nav .navbar-brand {
-    color: var(--dark-color) !important;
-}
-
-body.light nav ul li a {
-    color: var(--dark-color) !important;
-}
-
-/* banner light */
-body.light .my-banner .info h2 {
-    color: var(--dark-color);
-}
-
-body.light .my-banner .info h3 {
-    color: var(--dark-color);
-}
-
-body.light .my-banner .info .contact-me span a {
-    color: var(--secondary-color);
-    background-color: var(--secondary-light-color);
-}
-
-body.light .my-banner .info .contact-me span.active a {
-    color: var(--dark-color);
-    background-color: var(--warning-color);
-}
-
-body.light .my-banner .info .contact-me span a:hover {
-    color: var(--dark-color);
-    background-color: var(--warning-color);
-}
-
-/* about-me light */
-body.light .about-me h2 {
-    color: var(--dark-color);
-}
-
-body.light .about-me p {
-    color: var(--secondary-color);
-}
-
-body.light .about-me table tr th:first-child {
-    color: var(--secondary-color);
-}
-
-body.light .about-me table tr td:last-child {
-    color: var(--secondary-color);
-}
-
-/* Resum light */
-body.light .resume>p {
-    color: var(--secondary-color);
-}
-
-body.light .resume .info .box {
-    background-color: var(--secondary-light-color);
-}
-
-body.light .resume .info .box:hover {
-    border: 1px solid #465264;
-    transition: ease 0.5s;
-}
-
-body.light .resume .info .position {
-    color: var(--secondary-color);
-}
-
-body.light .resume .info .word-place {
-    color: var(--secondary-color);
-}
-
-body.light .resume .info p {
-    color: var(--secondary-color);
-}
-
-/* My-skill light */
-body.light .my-skill p {
-    color: var(--secondary-color);
-}
-
-body.light .my-skill .button-group button {
-    color: white;
-    background-color: var(--muted-color);
-}
-
-body.light .my-skill .button-group button.active {
-    background-color: var(--warning-color);
-    color: var(--dark-color);
-}
-
-/* our-projects light */
-body.light .our-projects p {
-    color: var(--secondary-color);
-}
-
-body.light .our-projects h6 {
-    color: var(--dark-color) !important;
-}
-
-body.light .contact-me p {
-    color: var(--secondary-color);
-}
-
-body.light .contact-me .title {
-    color: var(--dark-color);
-}
-
-body.light .contact-me .desc {
-    color: var(--secondary-color);
-}
-
-body.light .contact-me .icon {
-    background-color: var(--muted-color);
-}
-
-/* footer light */
-body.light footer h3 {
-    color: var(--dark-color);
-}
-
-body.light footer p {
-    color: var(--secondary-color);
-}
-
-body.light footer ul li {
-    color: var(--secondary-color);
-}
-
-body.light footer ul li a {
-    color: var(--secondary-color);
-}
-
-body.light .footer-bottom {
-    background-color: var(--primary-dark-color);
 }
 
 /* Responsive */
