@@ -9,15 +9,16 @@ html {
 }
 
 :root {
-    --warning-color: #F2BC36;
+    --color-gray-500: #f8f9fa;
+    --warning-color: #ffbd39;
     --dark-color: black;
     --muted-color: rgb(163, 157, 157);
-    --primary-color: #122D52;
-    --primary-dark-color: #1F2937;
+    --primary-color: #122d52;
+    --primary-dark-color: #1f2937;
     --secondary-color: #262a2e;
-    --secondary-light-color: #F9FAFB;
-    --light-color: #FFFFFF;
-    --dark-light-color: #1A1A1A;
+    --secondary-light-color: #1a1a1a;
+    --light-color: #ffffff;
+    --dark-light-color: #a3a3a3;
 }
 
 body {
@@ -27,13 +28,13 @@ body {
 body.light-theme {
     background-color: white;
     --light-color: black;
-    --dark-color: #FFFFFF;
+    --dark-color: #ffffff;
     --muted-color: black;
-    --secondary-light-color: black;
-    --dark-light-color: #F9FAFB;
+    --secondary-light-color: #e2e6ea;
+    --dark-light-color: #0f0f0f;
 }
 
-/* navigation */
+/* header */
 header {
     top: -999px;
 }
@@ -47,17 +48,18 @@ header.sticky {
     transition: ease 0.5s;
 }
 
-nav .navbar-brand {
+/* navigation */
+.navbar-brand {
     color: var(--light-color) !important;
     font-weight: bold;
     font-size: 25px;
 }
 
-nav .navbar-toggler {
+.navbar-toggler {
     background-color: grey;
 }
 
-nav ul li a {
+ul.navbar-nav li a {
     color: var(--light-color) !important;
     text-transform: capitalize;
     font-weight: 500;
@@ -65,7 +67,14 @@ nav ul li a {
     font-size: 18px;
 }
 
-nav ul li a.active span {
+ul.navbar-nav li a:hover span {
+    border-bottom: 1px solid var(--warning-color);
+    border-width: 2px;
+    display: inline-block;
+    height: 32px;
+}
+
+ul.navbar-nav li a.active span {
     color: var(--warning-color) !important;
     border-bottom: 1px solid var(--warning-color);
     border-width: 2px;
@@ -78,47 +87,54 @@ nav ul li a.active span {
     margin-top: 100px;
 }
 
-.my-banner .info h6 {
+.my-banner .info .greeting {
     margin-bottom: 15px;
     color: var(--warning-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.my-banner .info h1 {
+    font-size: 60px;
     font-weight: bold;
+    color: var(--light-color);
 }
 
 .my-banner .info h2 {
-    font-size: 70px;
-    font-weight: bold;
-    color: var(--light-color);
-}
-
-.my-banner .info h3 {
     margin-top: 25px;
     color: var(--light-color);
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .my-banner .info .contact-me {
     margin-top: 45px;
 }
 
-.my-banner .info .contact-me span a {
+.my-banner .info .contact-me a {
     color: var(--light-color);
     border: 1px solid var(--light-color);
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: 500;
+    font-size: 12px;
     text-decoration: none;
+    letter-spacing: 2px;
+    padding: 15px 17px;
 }
 
-.my-banner .info .contact-me span a:hover {
+.my-banner .info .contact-me a:hover {
     color: var(--dark-color);
     background-color: var(--warning-color);
 }
 
-.my-banner .info .contact-me span.active a {
+.my-banner .info .contact-me a.active {
     color: var(--dark-color);
     background-color: var(--warning-color);
+    border: none;
 }
 
-.my-banner .info .contact-me span:last-child {
+.my-banner .info .contact-me a:last-child {
     margin-left: 15px;
 }
 
@@ -151,30 +167,27 @@ nav ul li a.active span {
     color: var(--muted-color);
 }
 
-.about-me .cv {
+.about-me .qty-project {
     margin-top: 20px;
 }
 
-.about-me .cv div {
-    font-size: 20px;
+.about-me .qty-project .counter,
+.about-me .qty-project .plus
+{
+    color: var(--warning-color);
+    font-size: 25px;
     font-weight: bolder;
+}
+
+.about-me .qty-project .content {
+    font-size: 20px;
     color: var(--light-color);
 }
 
-.about-me .cv .qty-project {
-    color: var(--warning-color);
-    font-size: 25px;
-}
-
-.about-me .cv .qty-project+span {
-    color: var(--warning-color);
-    font-size: 25px;
-}
-
-.about-me .cv a {
+.about-me .cv {
     color: var(--light-color);
     border: 1px solid var(--light-color);
-    padding: 10px 20px;
+    padding: 16px;
     border-radius: 25px;
     font-weight: 500;
     margin-top: 20px;
@@ -215,20 +228,22 @@ nav ul li a.active span {
     padding: 35px 25px;
     border-radius: 10px;
     margin-bottom: 25px;
-    background-color: var(--dark-light-color);
+    background-color: var(--secondary-light-color);
 }
 
 .resume .info .box:hover {
     border: 1px solid var(--light-color);
-    transition: ease 0.5s;
 }
 
 .resume .info .year {
     color: var(--warning-color);
+    font-weight: 900;
+    font-size: 26px;
 }
 
 .resume .info .position {
     color: var(--light-color);
+    font-size: 26px;
 }
 
 .resume .info .word-place {
@@ -260,6 +275,7 @@ nav ul li a.active span {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 12px;
+    border: none;
 }
 
 /* My Skill */
@@ -290,9 +306,9 @@ nav ul li a.active span {
     border-radius: 5px;
     padding: 5px 10px;
     margin: 10px;
-    border: 1px solid var(--light-color);
-    background-color: var(--light-color);
-    color: var(--dark-color);
+    border: none;
+    background-color: var(--secondary-light-color);
+    color: var(--dark-light-color);
 }
 
 .my-skill .button-group button.active {
@@ -343,9 +359,9 @@ nav ul li a.active span {
 }
 
 .our-projects .badge-dark {
-    background-color: var(--light-color);
-    color: var(--dark-color);
-    padding: 2px 5px;
+    background-color: var(--secondary-light-color);
+    color: var(--dark-light-color);
+    padding: 5px;
 }
 
 /* Contact Me */
@@ -372,7 +388,7 @@ nav ul li a.active span {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    background-color: #1A1A1A;
+    background-color: var(--secondary-light-color);
     margin: auto;
     padding-top: 18px;
 }
@@ -390,12 +406,12 @@ nav ul li a.active span {
 }
 
 .form-contact .box-avatar {
-    background-color: var(--dark-light-color);
+    background-color: var(--secondary-light-color);
     height: 100%;
 }
 
 .form-contact form {
-    background-color: var(--light-color);
+    background-color: var(--color-gray-500);
     padding: 30px;
 }
 
@@ -417,6 +433,7 @@ nav ul li a.active span {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 12px;
+    border: none;
 }
 
 #form-contact .error {
@@ -493,7 +510,6 @@ footer .list-social i {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-
 }
 
 .slick-dots li.slick-active {
@@ -543,7 +559,6 @@ footer .list-social i {
     .my-banner .item .avatar img {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 768px) {
