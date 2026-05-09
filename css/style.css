@@ -18,7 +18,7 @@ html {
     --secondary-color: #262a2e;
     --secondary-light-color: #1a1a1a;
     --light-color: #ffffff;
-    --dark-light-color: #a3a3a3;
+    --dark-light-color: rgb(224, 232, 250);;
 }
 
 body {
