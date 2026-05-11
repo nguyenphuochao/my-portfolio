@@ -1,10 +1,10 @@
-$(document).ready(function () {
-    // load local storage
-    loadLocalstorage();
+$(function() {
+    // load theme storage
+    loadThemeStorage();
 
     // show nav scroll
     window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
+        const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 200);
 
         // active nav item first
@@ -107,10 +107,10 @@ $(document).ready(function () {
 
     // toggle theme dark/light
     $("#toggle-theme").change(function () {
-        var isCheckedToggleTheme = $(this).prop('checked');
-        localStorage.setItem('isCheckedToggleTheme', isCheckedToggleTheme);
-        $('body').toggleClass("light-theme", !isCheckedToggleTheme);
-    })
+        var isCheckedTheme = $(this).prop('checked');
+        localStorage.setItem('isCheckedTheme', isCheckedTheme);
+        $('body').toggleClass("light-theme", !isCheckedTheme);
+    });
 
     var typed1 = new Typed('.text-typing-effect-1', {
         strings: ['', 'I am a web developer'],
@@ -130,12 +130,18 @@ $(document).ready(function () {
 
 });
 
-function loadLocalstorage() {
-    var isCheckedToggleTheme = true
-    $("#toggle-theme").bootstrapToggle(isCheckedToggleTheme ? "on" : "off")
-    if (localStorage.getItem('isCheckedToggleTheme')) {
-        isCheckedToggleTheme = JSON.parse(localStorage.getItem('isCheckedToggleTheme')) ? true : false;
-        $("#toggle-theme").bootstrapToggle(isCheckedToggleTheme ? "on" : "off")
-        $('body').toggleClass("light-theme", !isCheckedToggleTheme);
+function loadThemeStorage() {
+
+    if(localStorage.getItem('isCheckedTheme') === null) {
+        return;
+    }
+
+    const isCheckedTheme = JSON.parse(localStorage.getItem('isCheckedTheme'));
+    if(isCheckedTheme) {
+        $("#toggle-theme").bootstrapToggle("on");
+        $('body').removeClass("light-theme");
+    } else {
+        $("#toggle-theme").bootstrapToggle("off");
+        $('body').addClass("light-theme");
     }
 }

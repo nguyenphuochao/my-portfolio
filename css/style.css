@@ -32,7 +32,7 @@ body.light-theme {
     --light-color: black;
     --dark-color: #ffffff;
     --muted-color: black;
-    --secondary-light-color: #e2e6ea;
+    --secondary-light-color: #F2F2F2;
     --dark-light-color: #0f0f0f;
     --color-gray-button: rgba(0,0,0,0.1);
     --color-gray-border: rgb(177 168 168);
@@ -313,6 +313,7 @@ ul.navbar-nav li a.active span {
     border: none;
     background-color: var(--secondary-light-color);
     color: var(--dark-light-color);
+    font-weight: 500;
 }
 
 .my-skill .button-group button.active {
