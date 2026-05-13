@@ -1,6 +1,7 @@
-$(function() {
-    // load theme storage
+$(function () {
     loadThemeStorage();
+
+    loadTypingEffect();
 
     // show nav scroll
     window.addEventListener("scroll", function () {
@@ -20,7 +21,7 @@ $(function() {
     });
 
     // Banner couersel
-    $('.my-banner').slick({
+    $(".my-banner").slick({
         infinite: false,
         dots: true,
         speed: 300,
@@ -28,13 +29,13 @@ $(function() {
         adaptiveHeight: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
     });
 
     // counter number
-    $('.counter').countUp({
-        'time': 3000,
-        'delay': 10
+    $(".counter").countUp({
+        time: 3000,
+        delay: 10,
     });
 
     // My-skill filter
@@ -64,25 +65,25 @@ $(function() {
             name: "required",
             email: {
                 required: true,
-                email: true
+                email: true,
             },
             subject: "required",
-            message: "required"
+            message: "required",
         },
         messages: {
             name: "Please enter this field",
             email: {
                 required: "Please enter this field",
-                email: "Email much format name@domain.com"
+                email: "Email much format name@domain.com",
             },
             subject: "Please enter this field",
-            message: "Please enter this field"
-        }
+            message: "Please enter this field",
+        },
     });
 
     // Animation on scroll
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
             } else {
@@ -101,47 +102,56 @@ $(function() {
         } else {
             $(".back-to-top").css("opacity", 0);
         }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // toggle theme dark/light
     $("#toggle-theme").change(function () {
-        var isCheckedTheme = $(this).prop('checked');
-        localStorage.setItem('isCheckedTheme', isCheckedTheme);
-        $('body').toggleClass("light-theme", !isCheckedTheme);
-    });
-
-    var typed1 = new Typed('.text-typing-effect-1', {
-        strings: ['', 'I am a web developer'],
-        typeSpeed : 100,
-        backSpeed: 50,
-        loop: true,
-        loopCount: 5
-    });
-
-    var typed2 = new Typed('.text-typing-effect-2', {
-        strings: ['', 'I am a fullstack developer'],
-        typeSpeed : 100,
-        backSpeed: 50,
-        loop: true,
-        loopCount: 5
+        var isCheckedTheme = $(this).prop("checked");
+        localStorage.setItem(
+            "themeStorage",
+            isCheckedTheme ? "dark-theme" : "light-theme",
+        );
+        $("body").toggleClass("light-theme", !isCheckedTheme);
     });
 
 });
 
+// load theme localStorage
 function loadThemeStorage() {
-
-    if(localStorage.getItem('isCheckedTheme') === null) {
+    if (localStorage.getItem("themeStorage") === null) {
         return;
     }
 
-    const isCheckedTheme = JSON.parse(localStorage.getItem('isCheckedTheme'));
-    if(isCheckedTheme) {
+    const themeStorage = localStorage.getItem("themeStorage");
+
+    if (themeStorage === "dark-theme") {
         $("#toggle-theme").bootstrapToggle("on");
-        $('body').removeClass("light-theme");
+        $("body").removeClass("light-theme");
     } else {
         $("#toggle-theme").bootstrapToggle("off");
-        $('body').addClass("light-theme");
+        $("body").addClass("light-theme");
     }
+}
+
+// type effect in section banner
+function loadTypingEffect() {
+    // bannder 1
+    new Typed(".text-typing-effect-1", {
+        strings: ["", "I am a web developer"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        loopCount: 5,
+    });
+
+    // banner 2
+    new Typed(".text-typing-effect-2", {
+        strings: ["", "I am a fullstack developer"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        loopCount: 5,
+    });
 }
