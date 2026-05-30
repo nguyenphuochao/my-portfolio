@@ -52,6 +52,13 @@ header.sticky {
     transition: ease 0.5s;
 }
 
+/* top navigation */
+#topNav {
+    background-color: var(--warning-color);
+    height: 5px; 
+    width: 0;
+}
+
 /* navigation */
 .navbar-brand {
     color: var(--light-color) !important;

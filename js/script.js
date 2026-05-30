@@ -5,6 +5,11 @@ $(function () {
 
     // show nav scroll
     window.addEventListener("scroll", function () {
+        // scroll update with top nav
+        const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
+        const topNavWith = (Math.ceil(window.scrollY) * 100) / maxScrollY;
+        $("#topNav").css("width", topNavWith + '%');
+
         const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 200);
 
