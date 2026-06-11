@@ -585,8 +585,8 @@ footer .list-social i {
 /* back to top */
 .back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 120px;
+    right: 32px;
     transition: ease 0.5s;
 }
 
