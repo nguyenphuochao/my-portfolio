@@ -430,6 +430,11 @@ ul.navbar-nav li a.active span {
     }
 }
 
+.our-projects .card-actions a.opacity {
+    opacity: 0.5;
+    cursor: no-drop;
+}   
+
 /* Contact Me */
 .contact-me {
     margin-top: 50px;
